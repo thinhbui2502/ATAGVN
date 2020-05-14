@@ -1,16 +1,9 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: binhnguyen
-  Date: 13/05/2020
-  Time: 23:12
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>ATAG.VN</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -26,14 +19,13 @@
           integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="boostrap/css/bootstrap.css">
     <link rel="stylesheet" href="boostrap/css/mainStyle.css">
-    <link rel="stylesheet" href="boostrap/css/font-awesome.min.css">
 </head>
 <body>
 <header class="header-section">
     <div class="container-fluid">
         <div class="inner-header">
             <div class="logo">
-                <a href="./index.html"><img src="img/logo.png" alt="logo"></a>
+                <a href="./index.jsp"><img src="img/logo.png" alt="logo"></a>
             </div>
             <div class="header-right">
                 <i class="fa fa-search"></i>
@@ -142,7 +134,7 @@
             <p class="card-text">Thiết kế màn hình sáng tạo dưới dạng màn hình đục lỗ kép, cho phép hiển thị hình ảnh
                 toàn màn hình.</p>
             <p class="card-text">CAM-SELFIE KÉP ĐÊM 44MP+2MP</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="productDetails.jsp" class="btn btn-primary">Chi Tiết</a>
         </div>
     </div>
     <div class="card col-xl-3" style="width: 18rem;">
