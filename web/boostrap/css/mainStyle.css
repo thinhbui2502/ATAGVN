@@ -359,6 +359,10 @@ ol {
   Header Info
 -----------------------*/
 
+.deliveryInformation table tr td input{
+    font-size: 15px;margin-bottom: 0;border-bottom-width: 10px;padding-top: 20px;
+}
+
 .header-info {
     background: #B0BCC2;
     overflow: hidden;
@@ -391,7 +395,16 @@ ol {
 /*---------------------
   Hero Slider
 -----------------------*/
-.showall{
+.checkout-form-row {
+    margin-left: 0;
+    margin-top: 100px;
+}
+
+.deliveryInformation table {
+    margin-left: 150px;
+}
+
+.showall {
     font-weight: bolder;
     margin-bottom: 15px;
     float: right;
@@ -401,7 +414,7 @@ ol {
 .row {
     clear: both;
     margin-left: 100px;
-    margin-bottom : 20px
+    margin-bottom: 20px
 }
 
 .row .card {
@@ -672,19 +685,20 @@ hr {
 
 /*-----------------------*/
 
-.product-page img{
-    height:470px;
-    width:730px;
+.product-page img {
+    height: 470px;
+    width: 730px;
 }
 
-.product-page .description{
-    height:auto;
-    width:500px;
+.product-page .description {
+    height: auto;
+    width: 500px;
 }
 
-#addToCart i, #backToMain i{
+#addToCart i, #backToMain i {
     font-size: 15px;
 }
+
 /*---------------------
   Lookbok Section
 -----------------------*/
@@ -1608,7 +1622,7 @@ hr {
 -----------------------*/
 
 .cart-total-page {
-    padding-top: 0;
+    padding-top: 0px;
 }
 
 .checkout-form h3 {
