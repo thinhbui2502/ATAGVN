@@ -44,6 +44,7 @@
 <div class="mainManagement">
     <div class="productManagement" style="width: 1100px">
         <h3>Product Management</h3>
+        <h6><a href="#">Add more Product</a></h6>
         <table class="table table-hover">
             <thead>
             <tr>
@@ -77,6 +78,7 @@
 
     <div class="categoryManagement" style="width: 1100px">
         <h3>Category Management</h3>
+        <h6><a href="#">Add more Category</a></h6>
         <table class="table table-hover">
             <thead>
             <tr>
@@ -98,6 +100,7 @@
 
     <div class="accountManagement">
         <h3>Account Management</h3>
+        <h6><a href="#">Add more Account</a></h6>
         <table class="table table-hover">
             <thead>
             <tr>
