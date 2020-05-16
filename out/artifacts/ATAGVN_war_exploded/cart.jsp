@@ -174,7 +174,7 @@
                                 <td style="width: 500px"><input type="text" value=" 3-5 working days " disabled style="font-size: 15px"></td>
                             </tr>
                             <tr>
-                                <th colspan="2"><input type="submit" value="Order"></th>
+                                <th colspan="2" style="text-align: right"><input type="submit" value="Order"></th>
                             </tr>
                         </table>
                     </form>

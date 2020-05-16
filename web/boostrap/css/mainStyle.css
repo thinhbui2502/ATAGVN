@@ -196,7 +196,7 @@ ol {
 
 .inner-header .user-access {
     float: right;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 .inner-header .user-access a {
@@ -206,6 +206,8 @@ ol {
     font-weight: 500;
     position: relative;
     line-height: 42px;
+    margin-left: 20px;
+    margin-right: 20px ;
 }
 
 .inner-header .user-access a.in {
@@ -358,6 +360,55 @@ ol {
 /*---------------------
   Header Info
 -----------------------*/
+.mainManagement a:active, .mainManagement a:visited {
+    color: blue;
+}
+
+.mainManagement a:hover {
+    color: red;
+}
+
+.mainManagement{
+    width: 100%;
+    margin: 30px 60px 30px 30px;
+}
+
+.mainManagement .productManagement input{
+    width: 200px; !important;
+}
+.mainManagement .accountManagement input{
+    width: 130px; !important;
+}
+.mainManagement .accountManagement th, .mainManagement .accountManagement td{
+    width: 130px; !important;
+    margin-left: 0; !important;
+    margin-right: 0; !important;
+}
+.accountManagement, .accountManagement table {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.orderManagement, .productManagement, .categoryManagement, .accountManagement {
+    margin-bottom: 80px;
+}
+
+.mainManagement > .orderManagement table input{
+    width: 130px; !important;
+}
+.mainManagement > .orderManagement th, .mainManagement > .orderManagement td{
+    width: 130px; !important;
+    margin-left: 0; !important;
+    margin-right: 0; !important;
+}
+.orderManagement, .orderManagement table {
+    width: 100%;
+    margin-right: 30px;
+}
+.mainManagement h3{
+    width: 100%;
+    margin-right: 30px;
+}
 
 .deliveryInformation table tr td input{
     font-size: 15px;margin-bottom: 0;border-bottom-width: 10px;padding-top: 20px;
