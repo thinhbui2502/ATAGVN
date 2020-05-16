@@ -42,11 +42,10 @@
             <nav class="main-menu mobile-menu">
                 <ul>
                     <li><a class="active" href="./index.html">Home</a></li>
-                    <li><a href="./categories.html">Shop</a>
+                    <li><a href="./categories.html">Category</a>
                         <ul class="sub-menu">
-                            <li><a href="product-page.html">Product Page</a></li>
-                            <li><a href="shopping-cart.html">Shopping Card</a></li>
-                            <li><a href="check-out.html">Check out</a></li>
+                            <li><a href="product-page.html">Samsung</a></li>
+                            <li><a href="shopping-cart.html">Apple</a></li>
                         </ul>
                     </li>
                     <li><a href="./product-page.html">About</a></li>
@@ -84,7 +83,7 @@
 
 <hr>
 
-<section class="product-page">
+<section class="product-page"   style="padding-bottom: 100px;padding-top: 100px">
     <div class="container-fluid">
         <br>
         <div class="row">
@@ -95,7 +94,7 @@
                 <div class="product-content">
                     <h2>OPPO RENO3 PRO</h2>
                     <div class="price">
-                        <h5 style="color:red;">12.990.000₫</h5>
+                        <h5 style="color:red; padding-bottom: 15px">12.990.000₫</h5>
                     </div>
                     <p class="description">
                         MÀN HÌNH ĐỤC LỖ KÉP ĐỘC ĐÁO : Sáng tạo và khác biệt <br>
@@ -106,19 +105,8 @@
                     </p>
                     <table class="tags">
                         <tr>
-                            <td width="100" height="30">Màu sắc :</td>
-                            <td>
-                                <label>
-                                    <select name="productColor">
-                                        <option value="Đen">Đen</option>
-                                        <option value="Trắng">Trắng</option>
-                                    </select>
-                                </label>
-                            </td>
-                        </tr>
-                        <tr>
                             <td>Tồn Kho :</td>
-                            <td><input style="background-color: transparent; border-color: transparent" type="text" name="inStock" disabled value="2"></td>
+                            <td><input style="background-color: transparent; border-color: transparent" type="text" name="quantityInStock" disabled value="2"></td>
                         </tr>
                     </table>
                     <div class="product-quantity">
@@ -143,7 +131,7 @@
                     <div class="single-footer-widget">
                         <h4>About us</h4>
                         <ul>
-                            <li>CodeGym BootCamp Java Mod 3</li>
+                            <li>CodeGym BC Java Mod 3</li>
                             <li>. Bui Duc Thinh (Leader)</li>
                             <li>. Nguyen Thai Binh</li>
                             <li>. Bui Xuan Huynh</li>
