@@ -22,7 +22,7 @@ create table Category
 
 alter table Product
     add foreign key (CategoryID) references Category (CategoryID)
-on update cascade ;
+        on update cascade;
 
 create table account
 (
@@ -43,9 +43,10 @@ create table Orders
     AccountID varchar(20) not null,
     OrderDate date        not null
 );
+
 alter table Orders
     add foreign key (AccountID) references Account (AccountID)
-on update cascade ;
+        on update cascade;
 
 create table Order_Product
 (
@@ -57,8 +58,8 @@ create table Order_Product
 );
 
 alter table Order_Product
-    add foreign key (OrderID) references Orders (OrderID) on update cascade ,
-    add foreign key (ProductID) references Product (ProductID) on update cascade ;
+    add foreign key (OrderID) references Orders (OrderID) on update cascade,
+    add foreign key (ProductID) references Product (ProductID) on update cascade;
 
 insert into Category
 values ('0593XQ', 'Samsung');
@@ -153,23 +154,23 @@ values ('SSGA11', '0593XQ', 'Galaxy A11', 3690000, 50, 'img/product/Galaxy-A11.P
         đáng giá như camera kép đầu tiên cũng như cấu hình mạnh mẽ.</p>');
 
 insert into account (accountid, accountname, loginname, password, accountaccess, address, phonenumber, gender, status)
- values ('AD1', 'Thinh Bui', 'mrthinh2502', 'thinhba', 1, 'Moon City', '0969357766', 1, 1),
- ('CT1', 'Linh Hoang', 'linhhm', 'linh123', 0, '111 Van Cao', '0913026630', 0, 1),
- ('CT2', 'Binh Nguyen', 'binh491', 'binh123', 0, '50 Pham Hung', '0969358899', 1, 1),
- ('CT3', 'Huynh Bui', 'huynhhuynh', 'huynhbui123', 0, 'Royal City', '0966351299', 0, 0);
+values ('AD1', 'Thinh Bui', 'mrthinh2502', 'thinhba', 1, 'Moon City', '0969357766', 1, 1),
+       ('CT1', 'Linh Hoang', 'linhhm', 'linh123', 0, '111 Van Cao', '0913026630', 0, 1),
+       ('CT2', 'Binh Nguyen', 'binh491', 'binh123', 0, '50 Pham Hung', '0969358899', 1, 1),
+       ('CT3', 'Huynh Bui', 'huynhhuynh', 'huynhbui123', 0, 'Royal City', '0966351299', 0, 0);
 
-insert into orders (orderid, accountid,OrderDate)
-values ('OD300401', 'CT1','2020-03-11'),
- ('OD300402', 'CT3','2020-03-12'),
- ('OD010501', 'CT2','2020-03-13'),
- ('OD050501', 'CT3','2020-03-14'),
- ('OD100501', 'CT1','2020-03-15');
+insert into orders (orderid, accountid, OrderDate)
+values ('OD300401', 'CT1', '2020-03-11'),
+       ('OD300402', 'CT3', '2020-03-12'),
+       ('OD010501', 'CT2', '2020-03-13'),
+       ('OD050501', 'CT3', '2020-03-14'),
+       ('OD100501', 'CT1', '2020-03-15');
 
 insert into order_product (ID, OrderID, ProductID, Quantity, PriceEach)
 values ('OP0001', 'OD300401', 'SSGAF', 1, 50000000),
- ('OP0002', 'OD300402', 'IP73', 3, 12990000),
- ('OP0003', 'OD300402', 'IP1164', 1, 30190000),
- ('OP0004', 'OD010501', 'SSGA11', 2, 3690000),
- ('OP0005', 'OD050501', 'SSGAS2P', 1, 23990000),
- ('OP0006', 'OD100501', 'IP11PM2', 1, 37990000);
+       ('OP0002', 'OD300402', 'IP73', 3, 12990000),
+       ('OP0003', 'OD300402', 'IP1164', 1, 30190000),
+       ('OP0004', 'OD010501', 'SSGA11', 2, 3690000),
+       ('OP0005', 'OD050501', 'SSGAS2P', 1, 23990000),
+       ('OP0006', 'OD100501', 'IP11PM2', 1, 37990000);
 
