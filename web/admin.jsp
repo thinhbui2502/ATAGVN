@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>ATAG.VN</title>
@@ -54,20 +55,24 @@
                 <th>Product Price</th>
                 <th>Quantity In Stock</th>
                 <th>Description</th>
+                <th>Image</th>
                 <th colspan="2">#</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <th><input type="text" name="pmID" value="ID" style="width: 160px;"></th>
-                <th><input type="text" name="pmName" value="Product Name"></th>
-                <th><input type="text" name="pmCategoryID" value="Category ID"></th>
-                <th><input type="text" name="pmPrice" value="Product Price"></th>
-                <th><input type="text" name="pmStatus" value="Status"></th>
-                <th><input type="text" name="pmDes" value="Description"></th>
-                <td><a href="#">Update</a></td>
-                <td><a href="#">Delete</a></td>
-            </tr>
+            <c:forEach items="${productList}" var="product">
+                <tr>
+                    <th><input type="text" name="pmID" value="${product.getProductId()}" style="width: 160px;"></th>
+                    <th><input type="text" name="pmName" value="${product.getProductName()}"></th>
+                    <th><input type="text" name="pmCategoryID" value="${product.getCategoryName()}"></th>
+                    <th><input type="text" name="pmPrice" value="${product.getProductPrice()}"></th>
+                    <th><input type="text" name="pmStatus" value="${product.getStatus()}"></th>
+                    <th><input type="text" name="pmDes" value="${product.getDescription()}"></th>
+                    <th><img src="/img/phone1.png"/></th>
+                    <td><a href="#">Update</a></td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+            </c:forEach>
             <tr>
                 <td colspan="4">Total :</td>
                 <td>0xxx</td>
