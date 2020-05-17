@@ -24,7 +24,6 @@
 
 
 <%--HEADER--%>
-
 <jsp:include page="header.jsp"></jsp:include>
 <jsp:include page="header-infor.jsp"></jsp:include>
 
