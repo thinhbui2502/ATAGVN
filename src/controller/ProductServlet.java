@@ -18,7 +18,36 @@ public class ProductServlet extends HttpServlet {
     private ProductService productService = new ProductServiceImp();
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+        String action = req.getParameter("action");
+        if(action ==null){
+            action = "";
+        }
+        switch (action){
+            case "add":
+                addProduct(req,resp);
+                break;
+            default:
+                listProducts(req,resp);
+                break;
+        }
+    }
+
+    private void addProduct(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String productID = req.getParameter("productId");
+        String productName = req.getParameter("productName");
+        float productPrice = Float.parseFloat(req.getParameter("productPrice"));
+        int quantityInStock = Integer.parseInt(req.getParameter("quantityInStock"));
+        int status = Integer.parseInt(req.getParameter("status"));
+        String description = req.getParameter("description");
+        String img = req.getParameter("img");
+        String categoryName = req.getParameter("categoryName");
+
+        Product product = new Product(productID,productName,productPrice,quantityInStock,img,status,description,categoryName);
+        this.productService.saveProduct(product);
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("addProduct.jsp");
+        req.setAttribute("message","New product is added!");
+        requestDispatcher.forward(req,resp);
+
     }
 
     @Override

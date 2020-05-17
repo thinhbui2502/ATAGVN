@@ -20,4 +20,9 @@ public class ProductServiceImp implements ProductService{
     public List<Product> showAllProduct() {
         return productList;
     }
+
+    @Override
+    public void saveProduct(Product product) {
+        productList.add(product);
+    }
 }
