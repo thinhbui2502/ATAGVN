@@ -25,7 +25,7 @@
     <div class="container-fluid">
         <div class="inner-header">
             <div class="logo">
-                <a href="./index.jsp"><img src="img/logo.png" alt="logo"></a>
+                <a href="index.jsp"><img src="img/logo.png" alt="logo"></a>
             </div>
             <div class="header-right">
                 <i class="fa fa-search"></i>
