@@ -1,0 +1,39 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: HoangLinh
+  Date: 5/17/2020
+  Time: 1:41 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<div class="header-info">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="header-item">
+                    <i class="fa fa-helicopter"></i>
+                    <p>Free shipping 99K</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="header-item">
+                    <i class="fa fa-gift"></i>
+                    <p>Opening discount Upto 90%</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="header-item">
+                    <i class="fa fa-gift"></i>
+                    <p>Free for CodeGym Student</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
