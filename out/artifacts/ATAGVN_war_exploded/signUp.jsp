@@ -61,11 +61,6 @@
                    <td><h6><i></i></h6></td>
                </tr>
                <tr>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-               </tr>
-               <tr>
                    <td><a href=""><input type="button" value="Cancel"></a></td>
                    <td><input type="submit" value="Submit"></td>
                    <td></td>
