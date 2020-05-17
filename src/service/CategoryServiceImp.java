@@ -27,6 +27,20 @@ public class CategoryServiceImp implements CategoryService {
         return list;
     }
 
+    @Override
+    public Category getCategory(String categoryId) throws SQLException {
+        Connection connection = DBConnect.getConnection();
+        String sql =  "select * from category where CategoryID=  '"+categoryId+"'";
+        PreparedStatement ps = connection.prepareCall(sql);
+        ResultSet rs = ps.executeQuery();
+        Category category = new Category();
+        while (rs.next()) {
+            category.setCategoryId(rs.getString("categoryId"));
+            category.setCategoryName(rs.getString("categoryName"));
+        }
+        return category;
+    }
+
     public static void main(String[] args) {
         CategoryServiceImp categoryServiceImp = new CategoryServiceImp();
         try {
