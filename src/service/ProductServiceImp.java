@@ -83,4 +83,24 @@ public class ProductServiceImp implements ProductService{
         }
         return products;
     }
+
+    @Override
+    public Product getProduct(String productId) throws SQLException {
+        Connection connection = DBConnect.getConnection();
+        String sql = "select * from product where ProductID = '"+productId+"'";
+        PreparedStatement ps = connection.prepareCall(sql);
+        ResultSet rs = ps.executeQuery();
+        Product product = new Product();
+        while (rs.next()) {
+            product.setProductId(rs.getString("ProductID"));
+            product.setCategoryId(rs.getString("CategoryId"));
+            product.setProductName(rs.getString("ProductName"));
+            product.setProductPrice(rs.getFloat("ProductPrice"));
+            product.setQuantityInStock(rs.getInt("QuantityInStock"));
+            product.setImage(rs.getString("Image"));
+            product.setStatus(rs.getInt("Status"));
+            product.setDescription(rs.getString("Description"));
+        }
+        return product;
+    }
 }
