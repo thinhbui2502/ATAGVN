@@ -135,6 +135,25 @@ ol {
 /*---------------------
   Header
 -----------------------*/
+.loginPanel {
+    position: absolute;
+    top: 260px;
+    left: 860px;
+    width: 420px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 50px 50px;
+    background-color: white;
+    box-shadow: 2px 2px;
+}
+.loginPanel table tr{
+    height: 50px;
+}
+
+.loginPanel table a:hover,.loginPanel table a:checked{
+    color: red;
+}
+
 
 .header-section {
     height: 104px;
@@ -207,7 +226,7 @@ ol {
     position: relative;
     line-height: 42px;
     margin-left: 20px;
-    margin-right: 20px ;
+    margin-right: 20px;
 }
 
 .inner-header .user-access a.in {
@@ -368,22 +387,30 @@ ol {
     color: red;
 }
 
-.mainManagement{
+.mainManagement {
     width: 100%;
     margin: 30px 60px 30px 30px;
 }
 
-.mainManagement .productManagement input{
-    width: 200px; !important;
+.mainManagement .productManagement input {
+    width: 200px;
+!important;
 }
-.mainManagement .accountManagement input{
-    width: 130px; !important;
+
+.mainManagement .accountManagement input {
+    width: 130px;
+!important;
 }
-.mainManagement .accountManagement th, .mainManagement .accountManagement td{
-    width: 130px; !important;
-    margin-left: 0; !important;
-    margin-right: 0; !important;
+
+.mainManagement .accountManagement th, .mainManagement .accountManagement td {
+    width: 130px;
+!important;
+    margin-left: 0;
+!important;
+    margin-right: 0;
+!important;
 }
+
 .accountManagement, .accountManagement table {
     width: 100%;
     margin-right: 30px;
@@ -393,25 +420,35 @@ ol {
     margin-bottom: 80px;
 }
 
-.mainManagement > .orderManagement table input{
-    width: 130px; !important;
+.mainManagement > .orderManagement table input {
+    width: 130px;
+!important;
 }
-.mainManagement > .orderManagement th, .mainManagement > .orderManagement td{
-    width: 130px; !important;
-    margin-left: 0; !important;
-    margin-right: 0; !important;
+
+.mainManagement > .orderManagement th, .mainManagement > .orderManagement td {
+    width: 130px;
+!important;
+    margin-left: 0;
+!important;
+    margin-right: 0;
+!important;
 }
+
 .orderManagement, .orderManagement table {
     width: 100%;
     margin-right: 30px;
 }
-.mainManagement h3{
+
+.mainManagement h3 {
     width: 100%;
     margin-right: 30px;
 }
 
-.deliveryInformation table tr td input{
-    font-size: 15px;margin-bottom: 0;border-bottom-width: 10px;padding-top: 20px;
+.deliveryInformation table tr td input {
+    font-size: 15px;
+    margin-bottom: 0;
+    border-bottom-width: 10px;
+    padding-top: 20px;
 }
 
 .header-info {

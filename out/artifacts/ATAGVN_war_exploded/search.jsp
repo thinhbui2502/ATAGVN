@@ -14,6 +14,20 @@
 
 <%--BODY--%>
 <div class="container">
+    <div class="searchContent" style="margin: 100px 0">
+        <div class="table">
+            <form action="" method="post">
+            <table>
+                <tr>
+                    <td style="border-top-color : white" ><input type="text" placeholder=" What are you looking for ?" style="height: 70px; width: 800px; border-radius: 50px;border: 1px solid grey; text-indent: 30px"></td>
+                    <td style="border-top-color : white"><input type="submit" value="Search" style="height: 70px; width: 200px;border-radius: 50px"></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+
+
     <div class="categoryName" style="margin-bottom: 20px">
         <h3>SEARCHING RESULT</h3>
     </div>
